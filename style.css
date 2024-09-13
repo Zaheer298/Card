@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Inter" , sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#ECEFFE,#CED6FB);
+}
+.card_list .card_item {
+    list-style: none;
+}
+.card_list .card_item .card_link{
+    user-select: none;
+    width: 300px; 
+    margin-left: 80px;
+    display: block;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0,  0, 0.07);
+    transition: 0.2s ease;
+}
+.card_list .card_item .card_link:hover{
+    border-color: #5372f0;
+}
+.card_list .card_link .card_image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card_list .card_link .badge{
+     color: #5372f0;
+     padding: 8px 16px;
+     font-size: 0.95rem;
+     margin: 16px  0 18px;
+     background: #DDE4FF;
+     width: fit-content;
+     border-radius: 50px;   
+}
+.card_list .card_link .badge.Designer{
+    color:lightcoral ;
+    background:#FFE3D2 ;
+}
+.card_list .card_link .badge.Marketer{
+    color: rgb(100, 128, 58);
+    background: #FFE3D2;
+}
+.card_list .card_link .badge.Game{
+    color: blue;
+    background: #FFECFF;
+}
+.card_list .card_link .badge.Editor{
+    color: rgb(177, 10, 121) ;
+    background:#FFECFF ;
+}
+.card_list .card_link  .card_tittle{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+.card_list .card_link .card_button{
+    height: 35px;
+    width: 35px;
+    color: #5372f0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372f0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+.card_list .card_link:hover .card_button{
+    color: #fff;
+    background: #5372f0;
+
+}
